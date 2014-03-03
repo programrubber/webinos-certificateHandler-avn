@@ -1,0 +1,28 @@
+{ "name": "webinos-certificateHandler"
+, "description": "An interface to OpenSSL's certificate creation and revocation functions"
+, "version": "0.0.1"
+, "main": "lib/certificate.js"
+, "keywords": ["OpenSSL","Crypto","Certificate","CRL"]
+, "maintainers": [{ "name": "John Lyle"},{"name": "Habib Virji"}]
+, "contributors": [{ "name": "John Lyle"}, {"name": "Habib Virji"}]
+, "bugs" : "http://jira.webinos.org"
+, "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/webinos/webinos-certificateHandler.git"
+  }
+, "dependencies" :
+  { "webinos-keyStorage" : "git://github.com/webinos/webinos-keyStorage", 
+    "webinos-utilities"  : "git://github.com/webinos/webinos-utilities"
+  }
+, "devDependencies" : {
+    "jasmine-node": "~1.7.0"
+  }
+, "engines":
+  { "node": ">= 0.8.0"
+  , "npm": ">= 1.1.17"
+  }
+, "scripts": 
+  { "install": "node-gyp configure build"
+,   "test": "jasmine-node ./test/jasmine"  
+  }                                                                                                                                                          
+}
