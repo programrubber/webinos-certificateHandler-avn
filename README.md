@@ -1,6 +1,10 @@
 webinos-certificateHandler-avn
 ==============================
 
-https://github.com/webinos/webinos-certificateHandler/commit/4ac13526635a8b2c8adb50ba404c75c761eceb88
-Dec 15, 2013
-commit 까지 가져 왔음
+openwrt 환경를 위한 cross-compile 지원
+[openwrt host][1] 환경에서 cross-compile 가능
+## [ cross_compile_npm.py][2] 로 module을 cross compile 할 수 있음 ##
+
+
+  [1]: https://github.com/OBIGOGIT/TargetOS/blob/master/jmp/build_backfire.md
+  [2]: https://github.com/OBIGOGIT/webinos-certificateHandler-avn/blob/openwrt/cross_compile_npm.py
