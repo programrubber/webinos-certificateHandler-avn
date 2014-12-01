@@ -8,7 +8,7 @@ if len(sys.argv) < 2:
 	print sys.argv[0] + " " + "<npm command>" + " " + "[node package module name]"
 	sys.exit()
 
-PATH_CROSS_COMPILER = "/home/douyaji/backfire/staging_dir/toolchain-arm_v6k_gcc-4.6-linaro_uClibc-0.9.33.2_eabi/bin"
+PATH_CROSS_COMPILER = "/home/obigo/work/ces2015/BoundaryDevice/Toolchain/ARMEL/fsl-linaro-toolchain/bin"
 
 print "adding cross compiler path"
 PATH_OLD = os.environ['PATH']
@@ -17,15 +17,15 @@ PATH_NEW = PATH_OLD + ':' + PATH_CROSS_COMPILER
 print "new path = %(PATH_NEW)s"%locals()
 os.environ['PATH'] = PATH_NEW
 
-os.environ['AR'] = "arm-openwrt-linux-ar"
-print "AR=" + os.environ['AR']
-os.environ['CC'] = "arm-openwrt-linux-gcc"
+os.environ['AR'] = "arm-fsl-linux-gnueabi-ar"
+print "AR=" + os.environ['AR'] 
+os.environ['CC'] = "arm-fsl-linux-gnueabi-gcc"
 print "CC=" + os.environ['CC']
-os.environ['CXX'] = "arm-openwrt-linux-g++"
+os.environ['CXX'] = "arm-fsl-linux-gnueabi-g++"
 print "CXX=" + os.environ['CXX']
-os.environ['LINK'] = "arm-openwrt-linux-g++"
+os.environ['LINK'] = "arm-fsl-linux-gnueabi-g++"
 print "LINK=" + os.environ['LINK']
-os.environ['STAGING_DIR'] = "/home/douyaji/backfire/staging_dir/"
+os.environ['STAGING_DIR'] = "/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel"
 print "LINK=" + os.environ['STAGING_DIR']
 
 print "============================================="
