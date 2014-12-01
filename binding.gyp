@@ -31,8 +31,8 @@
           'include_dirs': ['<(openssl_root)/include'],
         }],
         [ 'OS=="freebsd" or OS=="openbsd" or OS=="mac" or OS=="solaris" or OS=="linux"', {
-          'include_dirs': ['/home/douyaji/backfire/staging_dir/target-arm_v6k_uClibc-0.9.33.2_eabi/usr/include'],
-          'libraries': ['-L/home/douyaji/backfire/staging_dir/target-arm_v6k_uClibc-0.9.33.2_eabi/usr/lib','-lssl', '-lcrypto'],
+          'include_dirs': ['/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel/usr/include'],
+          'libraries': ['-L/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel/usr/lib','-lssl', '-lcrypto'],
         }],
       ],  
     },
