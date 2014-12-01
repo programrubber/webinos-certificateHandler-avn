@@ -32,7 +32,7 @@
         }],
         [ 'OS=="freebsd" or OS=="openbsd" or OS=="mac" or OS=="solaris" or OS=="linux"', {
           'include_dirs': ['/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel/usr/include'],
-          'libraries': ['-L/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel/usr/lib','-lssl', '-lcrypto'],
+          'libraries': ['-L/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel/usr/lib', '-L/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel/usr/lib', '-lssl', '-lcrypto'],
         }],
       ],  
     },
