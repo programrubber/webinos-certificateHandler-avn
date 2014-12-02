@@ -23,10 +23,9 @@ os.environ['CC'] = "arm-fsl-linux-gnueabi-gcc"
 print "CC=" + os.environ['CC']
 os.environ['CXX'] = "arm-fsl-linux-gnueabi-g++"
 print "CXX=" + os.environ['CXX']
-os.environ['LINK'] = "arm-fsl-linux-gnueabi-g++"
-print "LINK=" + os.environ['LINK']
-os.environ['STAGING_DIR'] = "/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel"
-print "LINK=" + os.environ['STAGING_DIR']
+os.environ['LD'] = "arm-fsl-linux-gnueabi-g++ --sysroot=/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel"
+print "LD=" + os.environ['LD']
+
 
 print "============================================="
 print "Cross Compiling Node Package Module"
