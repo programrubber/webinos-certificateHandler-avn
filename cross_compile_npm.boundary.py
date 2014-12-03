@@ -8,7 +8,7 @@ if len(sys.argv) < 2:
 	print sys.argv[0] + " " + "<npm command>" + " " + "[node package module name]"
 	sys.exit()
 
-PATH_CROSS_COMPILER = "/opt/boundary/Toolchain/ARMEL/fsl-linaro-toolchain/bin"
+PATH_CROSS_COMPILER = "/opt/boundary/toolchain/bin"
 
 print "adding cross compiler path"
 PATH_OLD = os.environ['PATH']
@@ -23,7 +23,7 @@ os.environ['CC'] = "arm-fsl-linux-gnueabi-gcc"
 print "CC=" + os.environ['CC']
 os.environ['CXX'] = "arm-fsl-linux-gnueabi-g++"
 print "CXX=" + os.environ['CXX']
-os.environ['LD'] = "arm-fsl-linux-gnueabi-g++ --sysroot=/opt/boundary/Sysroot/ARMEL/sysroot_armel"
+os.environ['LD'] = "arm-fsl-linux-gnueabi-g++ --sysroot=/opt/boundary/sysroot"
 print "LD=" + os.environ['LD']
 
 
