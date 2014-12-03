@@ -8,7 +8,7 @@ if len(sys.argv) < 2:
 	print sys.argv[0] + " " + "<npm command>" + " " + "[node package module name]"
 	sys.exit()
 
-PATH_CROSS_COMPILER = "/opt/boundary/toolchain/bin"
+PATH_CROSS_COMPILER = "/opt/boundary/toolchain"
 
 print "adding cross compiler path"
 PATH_OLD = os.environ['PATH']
