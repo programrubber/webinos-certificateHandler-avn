@@ -31,8 +31,8 @@
           'include_dirs': ['<(openssl_root)/include'],
         }],
         [ 'OS=="freebsd" or OS=="openbsd" or OS=="mac" or OS=="solaris" or OS=="linux"', {
-          'include_dirs': ['/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel/default/usr/include'],
-          'libraries': ['-L/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel/default/usr/lib', '-L/home/obigo/work/ces2015/BoundaryDevice/Sysroot/ARMEL/sysroot_armel/default/lib', '-lssl', '-lcrypto'],
+          'include_dirs': ['/opt/boundary/Sysroot/ARMEL/sysroot_armel/default/usr/include'],
+          'libraries': ['-L/opt/boundary/Sysroot/ARMEL/sysroot_armel/default/usr/lib', '-L/opt/boundary/Sysroot/ARMEL/sysroot_armel/default/lib', '-lssl', '-lcrypto'],
         }],
       ],  
     },
