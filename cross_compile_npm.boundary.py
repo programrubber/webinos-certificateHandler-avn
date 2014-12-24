@@ -19,9 +19,9 @@ os.environ['PATH'] = PATH_NEW
 
 os.environ['AR'] = "arm-fsl-linux-gnueabi-ar"
 print "AR=" + os.environ['AR'] 
-os.environ['CC'] = "arm-fsl-linux-gnueabi-gcc"
+os.environ['CC'] = "arm-fsl-linux-gnueabi-gcc --sysroot=/opt/boundary/sysroot"
 print "CC=" + os.environ['CC']
-os.environ['CXX'] = "arm-fsl-linux-gnueabi-g++"
+os.environ['CXX'] = "arm-fsl-linux-gnueabi-g++ --sysroot=/opt/boundary/sysroot"
 print "CXX=" + os.environ['CXX']
 os.environ['LD'] = "arm-fsl-linux-gnueabi-g++ --sysroot=/opt/boundary/sysroot"
 print "LD=" + os.environ['LD']
