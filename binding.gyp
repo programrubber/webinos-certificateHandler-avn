@@ -31,8 +31,8 @@
           'include_dirs': ['<(openssl_root)/include'],
         }],
         [ 'OS=="freebsd" or OS=="openbsd" or OS=="mac" or OS=="solaris" or OS=="linux"', {
-          'include_dirs': ['/opt/boundary/sysroot/default/usr/include'],
-          'libraries': ['-L/opt/boundary/sysroot/default/usr/lib', '-L/opt/boundary/sysroot/default/lib', '-lssl', '-lcrypto'],
+          'include_dirs': ['/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi/usr/include'],
+          'libraries': ['-L/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi/usr/lib', '-L/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi/lib', '-lssl', '-lcrypto'],
         }],
       ],  
     },
