@@ -1,5 +1,5 @@
 {
-  'targets': 
+  'targets':
   [
     {
        # Needed declarations for the target
@@ -9,7 +9,7 @@
           'src/certificate_manager.cpp',
           'src/openssl_wrapper.cpp',
         ],
-      
+
       'conditions': [
         [ 'OS=="win"', {
 		  'conditions': [
@@ -31,9 +31,10 @@
           'include_dirs': ['<(openssl_root)/include'],
         }],
         [ 'OS=="freebsd" or OS=="openbsd" or OS=="mac" or OS=="solaris" or OS=="linux"', {
-          'libraries': ['-lssl', '-lcrypto'],
+          'include_dirs': ['/opt/boundary/sysroot/default/usr/include'],
+          'libraries': ['-L/opt/boundary/sysroot/default/usr/lib', '-L/opt/boundary/sysroot/default/lib', '-lssl', '-lcrypto'],
         }],
-      ],  
+      ],
     },
     {
     'target_name': 'webinos_wrt',
@@ -49,4 +50,3 @@
     }, # end webinos_wrt
   ] # end targets
 }
-
