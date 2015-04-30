@@ -32,7 +32,7 @@
         }],
         [ 'OS=="freebsd" or OS=="openbsd" or OS=="mac" or OS=="solaris" or OS=="linux"', {
           'include_dirs': ['/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi/usr/include'],
-          'libraries': ['-L/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi/usr/lib', '-L/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi/lib', '-lssl', '-lcrypto'],
+          'libraries': ['-L/opt/mazda/sysroot/usr/lib', '-L/opt/mazda/sysroot/lib', '-lssl', '-lcrypto'],
         }],
       ],  
     },
