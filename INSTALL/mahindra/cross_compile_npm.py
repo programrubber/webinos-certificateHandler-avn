@@ -2,7 +2,7 @@
 
 import os
 import sys
-import subprocess
+import run_process
 
 if len(sys.argv) < 2:
 	print sys.argv[0] + " " + "<npm command>" + " " + "[node package module name]"
@@ -26,7 +26,7 @@ print "CXX=" + os.environ['CXX']
 os.environ['LINK'] = "arm-oe-linux-gnueabi-g++"
 print "LINK=" + os.environ['LINK']
 os.environ['STAGING_DIR'] = "/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi"
-print "LINK=" + os.environ['STAGING_DIR']
+print "STAGING_DIR=" + os.environ['STAGING_DIR']
 
 print "============================================="
 print "Cross Compiling Node Package Module"
@@ -41,4 +41,4 @@ for arg in sys.argv[2:]:
 		CMD_NPM += arg + " "
 
 print CMD_NPM
-subprocess.call(CMD_NPM, shell=True)
+run_process.run_child_process(CMD_NPM, shell=True)

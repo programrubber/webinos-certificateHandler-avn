@@ -2,7 +2,7 @@
 
 import os
 import sys
-import subprocess
+import run_process
 
 if len(sys.argv) < 2:
 	print sys.argv[0] + " " + "<npm command>" + " " + "[node package module name]"
@@ -40,4 +40,4 @@ for arg in sys.argv[2:]:
 		CMD_NPM += arg + " "
 
 print CMD_NPM
-subprocess.call(CMD_NPM, shell=True)
+run_process.run_child_process(CMD_NPM, shell=True)
