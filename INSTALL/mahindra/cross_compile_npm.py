@@ -26,7 +26,7 @@ print "CXX=" + os.environ['CXX']
 os.environ['LINK'] = "arm-oe-linux-gnueabi-g++"
 print "LINK=" + os.environ['LINK']
 os.environ['STAGING_DIR'] = "/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi"
-print "LINK=" + os.environ['STAGING_DIR']
+print "STAGING_DIR=" + os.environ['STAGING_DIR']
 
 print "============================================="
 print "Cross Compiling Node Package Module"
