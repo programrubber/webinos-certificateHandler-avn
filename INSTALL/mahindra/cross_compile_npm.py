@@ -19,9 +19,9 @@ os.environ['PATH'] = PATH_NEW
 
 os.environ['AR'] = "arm-fsl-linux-gnueabi-ar"
 print "AR=" + os.environ['AR']
-os.environ['CC'] = "arm-oe-linux-gnueabi-gcc  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon -mtune=cortex-a9 --sysroot=/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi "
+os.environ['CC'] = "arm-oe-linux-gnueabi-gcc  -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi "
 print "CC=" + os.environ['CC']
-os.environ['CXX'] = "arm-oe-linux-gnueabi-g++  -march=armv7-a -mthumb-interwork -mfloat-abi=softfp -mfpu=neon -mtune=cortex-a9 --sysroot=/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi "
+os.environ['CXX'] = "arm-oe-linux-gnueabi-g++  -march=armv7-a -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/usr/local/oecore-i686/sysroots/cortexa9-vfp-neon-oe-linux-gnueabi "
 print "CXX=" + os.environ['CXX']
 os.environ['LINK'] = "arm-oe-linux-gnueabi-g++"
 print "LINK=" + os.environ['LINK']
